@@ -13,7 +13,7 @@ month[10] = "November";
 month[11] = "December";
 var date = new Date();
 var day = date.getDate();
-var month1 = date.getMonth() + 1;
+var month1 = date.getMonth();
 var y= date.getFullYear();
 var year= (y<1000) ? y + 1900 : y;
 document.write(month[month1] + ", " + day + " " + year);
