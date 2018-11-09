@@ -38,6 +38,19 @@ header {
 }
 .picture-container {
     display: flex;
-    flex-flow: row wrap;
+  height: 400px;
+  flex-wrap: wrap;
+  align-content: space-around;
 }
+#pic1, #pic2, #pic3, #pic4, #pic5, #pic6 {
+    width: 12%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+ /*.picture-container2 {
+    display: flex;
+  height: 400px;
+  flex-wrap: wrap;
+  align-content: space-between;
+}*/
 }
