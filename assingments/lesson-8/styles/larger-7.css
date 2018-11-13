@@ -1,0 +1,56 @@
+
+@media only screen and (min-width: 35em){
+nav button {display: none;}
+nav ul.hide {display: block;}
+nav {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:gray;
+}
+li {
+    float: left;
+}
+li  {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+body {
+    background-color: tan;
+}
+
+#hero {
+    float: none;
+    padding: 14px 55px;
+}    
+header {
+    display: flex;
+    justify-content: center;
+}
+.details {
+    padding: 14px 150px;
+}
+.picture-container {
+    display: flex;
+  height: 400px;
+  flex-wrap: wrap;
+  align-content: space-around;
+}
+#pic1, #pic2, #pic3, #pic4, #pic5, #pic6 {
+    width: 12%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+ /*.picture-container2 {
+    display: flex;
+  height: 400px;
+  flex-wrap: wrap;
+  align-content: space-between;
+}*/
+}

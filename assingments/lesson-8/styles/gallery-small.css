@@ -1,0 +1,46 @@
+@media only screen and (max-width: 500px) {
+    div.five-day {
+      display: none;
+    }
+  }
+@media only screen and (min-width: 400px) {
+     .hero-image{ 
+        
+    } 
+}
+  body {
+    background-color: tan;
+}
+
+nav button {
+            margin: .2rem 2%;
+            font-size: 1.8rem
+}
+nav {   display: flex;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color:gray;
+    }
+    
+    
+    nav ul  {
+        float: right;
+        color: black;
+        text-align: center;
+        padding: 14px 175px;
+        text-decoration: none;
+    }
+    
+nav ul li a {
+    display:block;
+    padding: .8rem 2%;
+    text-decoration: none;
+    color: black;
+    
+}
+   nav ul li a:hover {
+       background-color: whitesmoke;
+   } 
+ nav ul.hide {display: none;}

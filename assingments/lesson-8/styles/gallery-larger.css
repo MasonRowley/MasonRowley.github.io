@@ -1,0 +1,26 @@
+@media only screen and (min-width: 35em){
+nav button {display: none;}
+nav ul.hide {display: block;}
+nav {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:gray;
+}
+li {
+    float: left;
+}
+li  {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+body {
+    background-color: tan;
+}
+}
