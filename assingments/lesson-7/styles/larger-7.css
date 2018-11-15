@@ -53,4 +53,7 @@ header {
   flex-wrap: wrap;
   align-content: space-between;
 }*/
+form fieldset {
+    margin: 2 rem 0;
+}
 }
