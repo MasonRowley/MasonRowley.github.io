@@ -104,4 +104,35 @@ form input.submitButton {
     width: 96%;
     
 }
+#prestonbox {
+    width: 250px;
+    height: 300px;
+    border: 10px solid rgb(128, 128, 128);
+    background: rgba(73, 106, 214, 0.5);
+    padding: 25px;
+    margin: 25px;
+}
+#sodaspringsbox {
+    width: 250px;
+    height: 300px;
+    border: 10px solid rgb(128, 128, 128);
+    background: rgba(73, 106, 214, 0.5);
+    padding: 25px;
+    margin: 25px;
+}
+#fishhavenbox {
+    width: 250px;
+    height: 300px;
+    border: 10px solid rgb(128, 128, 128);
+    background: rgba(73, 106, 214, 0.5);
+    padding: 25px;
+    margin: 25px;
+}
+/* main {
+    display: flex;
+    height: 400px;
+    flex-wrap:nowrap;
+    align-content: space-around;
+}
+
    
