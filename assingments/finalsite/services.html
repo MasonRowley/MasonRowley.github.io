@@ -7,42 +7,80 @@
  <link rel= "stylesheet" type="text/css" href="styles/normalize.css">
  <link rel= "stylesheet" type="text/css" href="styles/small-7.css">
  <link rel= "stylesheet" type="text/css" href="styles/larger-7.css">
- <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css?family=Great+Vibes|Oswald" rel="stylesheet"> 
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
  <script src="scripts/hamburger.js"></script>
- <script src="scripts/windchill.js"></script>
+ 
  
  
 </head>
 <body>
  <header>
-      <h1>Temple Inn & Suites</h1>
+      <h1>Temple Inn & Suites | Services</h1>
+<img src="images/logo.jpg" width="400" height="150" srcset="images/logo-small.jpg 2x" alt="Temple Site logo">
 
 
 </header>
 <nav>
    
-    <button onclick="toggleMenu()">&#9776;</button>
-    <ul id="burger" class="hide" >
-        <li><a href="home.html" class="activeNav" target="_blank"> Home</a></li>
-        <li><a href="temples.html" target="_blank">Temples</a></li>
-        <li><a href="res.html" target="_blank">Reservations</a></li>
-        <li><a href="services.html" target="_blank">Services</a></li>
-        <li><a href="contact.html" target="_blank">Contact</a></li>
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="burger" class="hide" >
+            <li><a href="home.html" class="activeNav" target="_blank"> Home</a></li>
+            <li><a href="temples.html" target="_blank">Temples</a></li>
+            <li><a href="res.html" target="_blank">Reservations</a></li>
+            <li><a href="services.html" target="_blank">Services</a></li>
+            <li><a href="contact.html" target="_blank">Contact</a></li>
             
             
             
  </ul>
 
 </nav>
+<div id="service">
+
+<h2>Services we offer:</h2>
+
+    -Comfortable suites<br>
+    -A dining hall for parties and gatherings<br>
+    -Long term stay options for temple missionaries<br>
+    -Child care services while you are in the temple<br>
+    -Changing rooms<br>
+    -Business center for family search and ordinace work<br>
+
+<h2>Amenities:</h2>
+
+    -Continental Breakfast<br>
+    -Exercise Room<br>
+    -Indoor pool<br>
+    -WiFi and smart TVs<br>
+    -Onsite Parking<br>
+    -Family History consultations and ordinace card services<br>
+
+<h2>For Full-Time missionaries:</h2>    
+
+    -Longterm Stay Suites<br>
+    <img src="images/hotel-1.jpg" alt="hotel room picture">
+</div>
+<h2>Contact us!</h2>
+    
+<form method="GET" action="thanks.html">
+        <fieldset>
+            <legend>Guest Info</legend>
+            <label class="top">Full Name*<input type="text" pattern="[a-zA-Z]{5}" name="Fname" required></label>
+            <label class="top">Phone Number*<input type="tel" name="Phone" required></label>
+            <label class="top"></label>Email*<input type="email" name="email"placeholder="someone@gmail.com"></label>
+            <label class="top">Mission<input type="text" name="state" required></label>
+        </fieldset>
+
+
+
+
 
 <footer>
       
-
-     
-
 <div id="date"> <script src="scripts/currentdate.js"></script> 
     <a href="byui.edu">BYUI.edu</a>
+    <a href="lds.org">LDS.org</a>
 </div>
 </footer>
 </body>
