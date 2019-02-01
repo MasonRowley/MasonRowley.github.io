@@ -1,0 +1,20 @@
+header {
+    background-color: green;
+    color: white;
+}
+
+
+nav {
+    display: inline-block;
+    background-color: rgba(4, 110, 4, 0.548);
+    color: white;
+    padding: 100px
+    
+}
+nav a {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+ul {
+    list-style-type: none;
+}
