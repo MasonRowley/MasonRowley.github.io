@@ -24,6 +24,8 @@ nav a {
     visibility: hidden;
     
 }
+
+
 nav li:hover {
     background-color: black;
 }
@@ -65,5 +67,21 @@ ul {
     color: black;
     
 	
+}
+.rnav {
+    
+    display: block;
+    background-color: rgba(4, 110, 4, 0.548);
+    color: white;
+    padding: 1em;
+    border: 1px solid black;
+    font-size: 22px;
+    height: 1.5em;
+    
+}
+.rnav a {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    
 }
 }
