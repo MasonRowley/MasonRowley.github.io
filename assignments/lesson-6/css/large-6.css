@@ -6,40 +6,21 @@
     }
     
     
-    nav {
-        
-        /*display: inline-block;*/
-        background-color: rgba(4, 110, 4, 0.548);
-        color: white;
-        padding: 3em;
-        border: 1px solid black;
+    nav {	
+        background: tan;
+        font-size: 2em;
+        padding: 1em;
     }
-    #menu {
-        visibility: hidden;
-    }
-    nav li {
-        float:left;
-    }
-    nav a {
-        color: white;
-        font-family: 'Roboto', sans-serif;
-        display: block;
-        padding: 8px;
-        font-size: 15pt
-        
-        
-    }
-    nav ul { 
-        list-style-type: none;
-    }
+   nav li{
+       display: inline;
+   }
+   #menu{
+       visibility: hidden;
+   }
+   nav a {
+       color: black;
+   } 
 
-    nav li:hover {
-        background-color: black;
-
-    }
-    .active {
-        background-color: rgb(198, 207, 198);
-      }
     main img {
 
         display: block;
