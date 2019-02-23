@@ -1,6 +1,7 @@
 var n = new Date();
 var y = n.getFullYear();
 var d = n.getDay();
+var dom = n.getDate();
 var month = new Array(12);
 month[0] = "January";
 month[1] = "Feburary";
@@ -26,4 +27,4 @@ day[6] = "Saturday";
 
 var wd = day[n.getDay()];
 var m = month[n.getMonth()];
-document.getElementById("date").innerHTML = wd + ", " + d + " " + m + " " + y;
+document.getElementById("date").innerHTML = wd + ", " + dom + " " + m + " " + y;

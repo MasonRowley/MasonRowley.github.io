@@ -1,3 +1,3 @@
 function toggleMenu() {
-	document.getElementsById("nav")[0].idList.toggle("menu");
+	document.getElementsById("nav")[0].classList.toggle("rnav");
 }
