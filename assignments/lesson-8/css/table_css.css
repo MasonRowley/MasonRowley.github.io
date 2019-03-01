@@ -1,0 +1,31 @@
+table, th, td {
+    font-family: 'Ubuntu', sans-serif;
+    border: 1px solid gray;
+    border-collapse: collapse;
+    border-spacing: 5px;
+    
+}
+th, td {
+    padding: 5px;
+    text-align: center;
+}
+tfoot {
+    text-align: center;
+    background-color: #7fb9c2;
+    font-size: 10px;
+}
+thead {
+    text-align: center;
+    font-weight: bold;
+    background-color: #7fb9c2;
+}
+th {
+    background-color: #628ca6;
+    color:white;
+}
+td {
+    background-color: #e7ffed;
+}
+#grey {
+    background-color: #e7f0ed;
+}
