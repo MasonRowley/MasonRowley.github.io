@@ -35,7 +35,7 @@
    <form method="GET" action="thanks.html">
        <fieldset class="info">
            <legend>Personal Info </legend>
-           <label>Full Name*<input type="text" name="fname" required></label>
+           <label>Full Name*<input type="text" name="fname" required pattern="[A-Za-z]{5,}"></label>
            <label>Telephone Number<input type="tel" name="phone" placeholder="1234567890" ></label>
            <label>Email*<input type="email" name="email" required placeholder="someone@gmail.com"></label>
            <label>Zip Code*<input type="number" name="Zip" required></label>
@@ -71,7 +71,7 @@
             <legend>Additional Info/Comments</legend>
             <input type="textarea" name="comments">
         </fieldset>
-        <button type="submit" onclick="thanks.html">Submit</button>
+        <button type="submit" onclick="location.href = 'thanks.html';">Submit</button>
    </form>
 
 

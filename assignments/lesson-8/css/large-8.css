@@ -111,4 +111,9 @@
         border-collapse: collapse;
         border-radius: 5%
     }
+    button {
+        font-size: 18px;
+        padding: 6px;
+        border: 2px solid tan;
+    }
 }
