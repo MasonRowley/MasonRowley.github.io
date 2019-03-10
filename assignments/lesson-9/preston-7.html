@@ -1,0 +1,66 @@
+<!DOCTYPE HTML> 
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="description" content="Preston Idaho Weather Page">
+<title>Preston Idaho Weather Page</title>
+<link rel="stylesheet" href="css/normalize.css" >
+<link rel="stylesheet" href="css/small-7.css">
+<link rel="stylesheet" href="css/large-7.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<script src="scripts/hamburger.js"></script>
+<script src="scripts/windchill.js"></script>
+ </head>
+
+<body onload="windChillCalc()">
+<header>
+    <h1>&#127774;Weather Site</h1>
+    <div class="motto">
+            <h2>The Fastest, Most Accurate Weather Reporting Made Just For You!</h2>
+        </div>
+</header>
+<nav>
+       <ul class="navigation">
+           <li id=menu><a href="#" title="Menu" onclick="toggleMenu()">&#9776; Menu</a></li>
+           <li><a href="#" title="Home">Home |</a></li>
+           <li><a href="#" title="Preston">Preston |</a></li>
+           <li><a href="#" title="Fish Haven">Fish Haven |</a></li>
+           <li><a href="#" title="Soda Springs">Soda Springs |</a></li>
+           <li><a href="gallery-7.html" title="Gallery">Gallery |</a></li>
+           <li><a href="#" title="Storm Center">Storm Center</a></li>
+       </ul>
+    </nav>
+<main>
+    <h3>Preston, Idaho</h3>
+   <h4 id="fivedaytitle">5-Day Forcast</h4>
+   <ol id="fiveday">
+       <li>Temp:<span id = "temp">35</span> F</li>
+       <li>Humidity: 23%</li>
+       <li>Windspeed: <span id="speed">5</span> MPH</li>
+       <li>Cloud Density: None</li>
+       <li>High/Low Temps: 67&deg;F/48&deg;F </li>
+       <li>Wind Chill: <span id="output"> </span></li>
+   </ol>
+   <img src="images/preston-small.jpg" alt="Hero Image" srcset="images/preston-smaller.jpg 350w">
+</main>
+ <article>
+    <section class="articlebody">
+     <h2>Article Title</h2>
+     <h3>Author</h3>
+     <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor<br> 
+         incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud<br>
+         exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br> 
+         Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu <br>
+         fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa<br> 
+         qui officia deserunt mollit anim id est laborum."</p>
+    </section>
+    <img src="images/fire-small.jpg" alt="Article Image" srcset="images/fire-smaller.jpg 350w">     
+ </article>
+
+<footer>
+        <span id="date"></span> | &#169;2019 Mason Rowley USA <a href="BYUI.edu/online">BYU-Idaho Online</a>
+        <script src="scripts/currentdate.js"></script>
+</footer>
+</body>
+</html>
