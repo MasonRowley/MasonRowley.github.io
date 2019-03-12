@@ -1,6 +1,6 @@
-var header = document.querySelector('header');
 
-    var section = document.querySelector('section');
+
+    var section = document.getElementById("towninfo");
 
     var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
 
@@ -12,50 +12,38 @@ var header = document.querySelector('header');
     request.send();
 
     request.onload = function() {
-        var superHeroes = request.response;
-        populateHeader(superHeroes);
-        showHeroes(superHeroes);
+        var towninfo = request.response;
+        showTownInfo(towninfo);
     }
 
-    function populateHeader(jsonObj) {
-  var myH1 = document.createElement('h1');
-  myH1.textContent = jsonObj['squadName'];
-  header.appendChild(myH1);
+  
 
-  var myPara = document.createElement('p');
-  myPara.textContent = 'Hometown: ' + jsonObj['homeTown'] + ' // Formed: ' + jsonObj['formed'];
-  header.appendChild(myPara);
-}
-
-function showHeroes(jsonObj) {
-  var heroes = jsonObj['members'];
+function showTownInfo(jsonObj) {
+  var towns = jsonObj['towns'];
       
-  for (var i = 0; i < heroes.length; i++) {
+  for (var i = 0; i < towns.length; i++) {
     var myArticle = document.createElement('article');
     var myH2 = document.createElement('h2');
     var myPara1 = document.createElement('p');
     var myPara2 = document.createElement('p');
     var myPara3 = document.createElement('p');
-    var myList = document.createElement('ul');
+    var myPara4 = document.createElement('p');
 
-    myH2.textContent = heroes[i].name;
-    myPara1.textContent = 'Secret identity: ' + heroes[i].secretIdentity;
-    myPara2.textContent = 'Age: ' + heroes[i].age;
-    myPara3.textContent = 'Superpowers:';
-        
-    var superPowers = heroes[i].powers;
-    for (var j = 0; j < superPowers.length; j++) {
-      var listItem = document.createElement('li');
-      listItem.textContent = superPowers[j];
-      myList.appendChild(listItem);
-    }
+    myH2.textContent = towns[i].name;
+    myPara1.textContent = 'Town Motto:' + towns[i].motto;
+    myPara2.textContent = 'Year Founded:' + towns[i].yearFounded;
+    myPara3.textContent = 'Average Rainfall:' + towns[i].averageRainfall;
+    myPara4.textContent = 'Current Population:' + towns[i].currentPopulation;     
+    
+
+    section.appendChild(myArticle);
 
     myArticle.appendChild(myH2);
     myArticle.appendChild(myPara1);
     myArticle.appendChild(myPara2);
     myArticle.appendChild(myPara3);
-    myArticle.appendChild(myList);
+    myArticle.appendChild(myPara4);
 
-    section.appendChild(myArticle);
+    
   }
 }
