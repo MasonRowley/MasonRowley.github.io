@@ -91,10 +91,13 @@
     }
     .gallery1 p {
        
-    }   
-    #towninfo{
-        display: flex;
-        flex-direction: row;
+    }
+       
+    section  {
         
+        display: grid;
+        grid-template-columns: 420px 420px 420px;
+        border: 5px black;
+        background-color: tan;
     }
 }
