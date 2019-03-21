@@ -57,8 +57,8 @@
     .articlebody {
         position: absolute;
         top: 900px;
-        right: 100px;
-        left: 100px;
+        right: 90px;
+        left: 10px;
         background: radial-gradient(#eee, #4567aa);
         opacity: 0.9;
         filter: alpha(opacity=30);

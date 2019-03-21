@@ -1,8 +1,10 @@
 function windChillCalc() {
-    var t= parseInt(document.getElementById("temp").innerHTML);
+    var t= parseInt(document.getElementById("currtemp").innerHTML);
     var s= parseInt(document.getElementById("speed").innerHTML);
-    
-    var wind2= windChill(t,s);
+
+    var fahren = ((t - 273.15) * (9/5)) + 32;
+    console.log(fahren);
+    var wind2= windChill(fahren,s);
     document.getElementById("output").innerHTML=wind2; 
     }
     function windChill(tempf,speed) {

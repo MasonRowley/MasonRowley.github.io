@@ -9,9 +9,11 @@ weatherRequest.send();
 weatherRequest.onload = function () {
   var weatherData= JSON.parse(weatherRequest.responseText);
     console.log(weatherData);
-    var data =  weatherData.list[0].main.temp;
-    var fahren = ((data - 273.15) * (9/5)) + 32;
-    document.getElementById("current-temp").innerHTML = fahren.toFixed(1);
-    document.getElementById("humid").innerHTML = weatherData.list[0].main.humidity;
-}
 
+    for(i = 0; i < weatherData.list.length; i++){
+
+        if(weatherData.list[i].dt_txt = "18:00:00"){
+        document.getElementById("dayOne").innerHTML = (((weatherData.list[i].main.temp) - 273.15) * (9/5) + 32).toFixed(1) + " F";
+        }
+    }
+}

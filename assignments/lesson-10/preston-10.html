@@ -9,11 +9,10 @@
 <link rel="stylesheet" href="css/small-8.css">
 <link rel="stylesheet" href="css/large-8.css">
 <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-<script src="scripts/hamburger.js"></script>
-<script src="scripts/windchill.js"></script>
+
  </head>
 
-<body onload="windChillCalc()">
+<body>
 <header>
     <h1>&#127774;Weather Site</h1>
     <div class="motto">
@@ -24,7 +23,7 @@
        <ul class="navigation">
            <li id=menu><a href="#" title="Menu" onclick="toggleMenu()">&#9776; Menu</a></li>
            <li><a href="index.html" title="Home">Home |</a></li>
-           <li><a href="preston-7.html" title="Preston">Preston |</a></li>
+           <li><a href="preston-10.html" title="Preston">Preston |</a></li>
            <li><a href="#" title="Fish Haven">Fish Haven |</a></li>
            <li><a href="#" title="Soda Springs">Soda Springs |</a></li>
            <li><a href="gallery-7.html" title="Gallery">Gallery |</a></li>
@@ -33,15 +32,24 @@
     </nav>
 <main>
     <h3>Preston, Idaho</h3>
-   <h4 id="fivedaytitle">5-Day Forcast</h4>
+   <h4 id="fivedaytitle">Current Conditions</h4>
    <ol id="fiveday">
-       <li>Temp:<span id = "temp">35</span> F</li>
-       <li>Humidity: 23%</li>
+       <li>High:<span id = "hitemp">35</span> F</li>
+       <li>Humidity:<span id = "humid">23</span>%</li>
        <li>Windspeed: <span id="speed">5</span> MPH</li>
-       <li>Cloud Density: None</li>
-       <li>High/Low Temps: 67&deg;F/48&deg;F </li>
+       <li>Summary:<span id="sum">None</span></li>
        <li>Wind Chill: <span id="output"> </span></li>
-   </ol>
+    </ol>
+
+    <h4>Five Day Forcast</h4>
+    <ol id="forcast">
+        <li><span id="day1"> </span></li>
+        <li><span id="day2"> </span></li>
+        <li><span id="day3"> </span></li>
+        <li><span id="day4"> </span></li>
+        <li><span id="day5"> </span></li>
+    </ol>
+    
    <img src="images/preston-small.jpg" alt="Hero Image" srcset="images/preston-smaller.jpg 350w">
 </main>
  <article>
@@ -62,5 +70,10 @@
         <span id="date"></span> | &#169;2019 Mason Rowley USA <a href="BYUI.edu/online">BYU-Idaho Online</a>
         <script src="scripts/currentdate.js"></script>
 </footer>
+
+<script src="scripts/hamburger.js"></script>
+<script src="scripts/weathersummary.js"></script>
+
 </body>
+
 </html>
