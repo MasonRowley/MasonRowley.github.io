@@ -6,8 +6,9 @@
 <meta name="description" content="Weather Gallery Page">
 <title>Weather Gallery Page</title>
 <link rel="stylesheet" href="css/normalize.css" >
-<link rel="stylesheet" href="css/small-8.css">
-<link rel="stylesheet" href="css/large-8.css">
+<link rel="stylesheet" href="css/small-7.css">
+<link rel="stylesheet" href="css/large-7.css">
+<link rel="stylesheet" href="css/medium-7.css">
 <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 <script src="scripts/hamburger.js"></script>
 <script src="scripts/windchill.js"></script>
@@ -24,22 +25,45 @@
        <ul class="navigation">
            <li id=menu><a href="#" title="Menu" onclick="toggleMenu()">&#9776; Menu</a></li>
            <li><a href="index.html" title="Home">Home |</a></li>
-           <li><a href="preston-7.html" title="Preston">Preston |</a></li>
-           <li><a href="#" title="Fish Haven">Fish Haven |</a></li>
-           <li><a href="#" title="Soda Springs">Soda Springs |</a></li>
+           <li><a href="preston-10.html" title="Preston">Preston |</a></li>
+           <li><a href="fish-haven.html" title="Fish Haven">Fish Haven |</a></li>
+           <li><a href="soda-springs.html" title="Soda Springs">Soda Springs |</a></li>
            <li><a href="gallery-7.html" title="Gallery">Gallery |</a></li>
            <li><a href="stormcenter.html" title="Storm Center">Storm Center</a></li>
        </ul>
     </nav>
 <main>
     <h2>Weather Gallery</h2>
-   <div class="gallery">
-           <img src="images/gallery-large-1.png" srcset="images/gallery-large-1-small.png 350w" alt="Gallery 1"> 
-           <img src="images/gallery-large-2.png" srcset="images/gallery-large-2-small.png 350w" alt="Gallery 2">
-           <img src="images/gallery-large-3.jpeg" srcset="images/gallery-large-3-small.jpeg 350w" alt="Gallery 3">
-           <img src="images/gallery-large-4.jpeg" srcset="images/gallery-large-4-small.jpeg 350w" alt="Gallery 4">
-           <img src="images/gallery-large-5.jpeg" srcset="images/gallery-large-5-small.jpeg 350w" alt="Gallery 5">
-           <img src="images/gallery-large-6.jpeg" srcset="images/gallery-large-6-small.jpeg 350w" alt="Gallery 6">
+   <div class="gallery1">
+           <picture>
+               <source media="(max-width: 900px)" srcset="images/gallery-large-1-small.png">
+               <img src="images/gallery-large-1.png" alt="Tornado">
+           </picture>
+           
+           <picture>
+                <source media="(max-width: 900px)" srcset="images/gallery-large-2-small.png">
+                <img src="images/gallery-large-2.png" alt="Lightning">
+            </picture>
+            
+            <picture>
+                <source media="(max-width: 900px)" srcset="images/gallery-large-3-small.jpg">
+                <img src="images/gallery-large-3.jpeg" alt="Mountain">
+                </picture>
+    </div>
+
+    <div class="gallery2">
+            <picture>
+                <source media="(max-width: 900px)" srcset="images/gallery-large-4-small.jpg">
+                <img src="images/gallery-large-4.jpeg" alt="Road">
+                </picture>
+            <picture>
+                <source media="(max-width: 900px)" srcset="images/gallery-large-5-small.jpg">
+                <img src="images/gallery-large-5.jpeg" alt="Field">
+                </picture>
+            <picture>
+                <source media="(max-width: 900px)" srcset="images/gallery-large-6-small.jpg">
+                <img src="images/gallery-large-6.jpeg" alt="more Lightning">
+                </picture>
 
 
    </div>
