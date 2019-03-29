@@ -1,0 +1,85 @@
+<!DOCTYPE HTML> 
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="description" content="Storm Center">
+<title>Storm Center</title>
+<link rel="stylesheet" href="css/normalize.css" >
+<link rel="stylesheet" href="css/small-8.css">
+<link rel="stylesheet" href="css/large-8.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<script src="scripts/hamburger.js"></script>
+<script src="scripts/windchill.js"></script>
+ </head>
+
+
+<header>
+    <h1>&#127774;Weather Site</h1>
+    <div class="motto">
+            <h2>The Fastest, Most Accurate Weather Reporting Made Just For You!</h2>
+        </div>
+</header>
+<nav>
+       <ul class="navigation">
+           <li id=menu><a href="#" title="Menu" onclick="toggleMenu()">&#9776; Menu</a></li>
+           <li><a href="index.html" title="Home">Home |</a></li>
+           <li><a href="preston-10.html" title="Preston">Preston |</a></li>
+           <li><a href="#" title="Fish Haven">Fish Haven |</a></li>
+           <li><a href="#" title="Soda Springs">Soda Springs |</a></li>
+           <li><a href="gallery-7.html" title="Gallery">Gallery |</a></li>
+           <li><a href="stormcenter.html" title="Storm Center">Storm Center</a></li>
+       </ul>
+    </nav>
+<main>
+   <form method="GET" action="thanks.html">
+       <fieldset class="info">
+           <legend>Personal Info </legend>
+           <label>Full Name*<input type="text" name="fname" required pattern="[A-Za-z]{5,}"></label>
+           <label>Telephone Number<input type="tel" name="phone" placeholder="1234567890" ></label>
+           <label>Email*<input type="email" name="email" required placeholder="someone@gmail.com"></label>
+           <label>Zip Code*<input type="number" name="Zip" required></label>
+        </fieldset>
+       <fieldset class="storm">
+           <legend>Storm Data</legend>
+           <label>Storm Type
+               <select name="storm type">
+                   <option>Please Select</option>
+                   <option value="Flash Flood">Flash Flood</option>
+                   <option value="Hail">Hail</option>
+                   <option value="Hurricane">Hurricane</option>
+                   <option value="Thunderstorm">Thunderstorm</option>
+                   <option value="Tornado">Tornado</option>
+               </select>
+           </label>
+           <label>Storm Severity 1<input type="range" id="severity" name="stormseverity" min="0" max="10" step="1">10</label>
+           <label>Storm Region
+                <select name="storm region">
+                    <option>Please Select</option>
+                    <option value="Preston">Preston</option>
+                    <option value="Soda Springs">Soda Springs</option>
+                    <option value="Fish Haven">Fish Haven</option>
+                </select>
+        </fieldset> 
+        <fieldset class="danger">
+            <legend>User in Danger?</legend>
+            <label><input type="radio" name="danger" value="yes">Yes</label>
+            <label><input type="radio" name="danger" value="maybe">Maybe</label>
+            <label><input type="radio" name="danger" value="no">No</label>
+        </fieldset>    
+        <fieldset class="comments">
+            <legend>Additional Info/Comments</legend>
+            <input type="textarea" name="comments">
+        </fieldset>
+        <button type="submit" onclick="location.href = 'thanks.html';">Submit</button>
+   </form>
+
+
+
+</main>
+<footer>
+        <span id="date"></span> | &#169;2019 Mason Rowley USA <a href="BYUI.edu/online">BYU-Idaho Online</a>
+        <script src="scripts/currentdate.js"></script>
+</footer>
+</body>
+</html>
