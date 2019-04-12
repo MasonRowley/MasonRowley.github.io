@@ -1,0 +1,70 @@
+<!DOCTYPE HTML> 
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="description" content="Temple Inn Services for missionaries">
+<title>Temple Inn & Suites | Missionaries</title>
+<link rel="stylesheet" href="css/normalize.css" >
+<link rel="stylesheet" href="css/small.css">
+<link rel="stylesheet" href="css/large.css">
+<link rel="stylesheet" href="css/medium.css">
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+
+ </head>
+
+<body>
+<header>
+    <h1><u>Temple Inn & Suites</u></h1>
+    <div class="motto">
+            <h2>Helping you have the best temple experience possible!</h2>
+        </div>
+</header>
+<nav>
+       <ul class="navigation">
+           <li id=menu><a href="#" title="Menu" onclick="toggleMenu()">&#9776; Menu</a></li>
+           <li><a href="temple-home.html" title="Home">Home |</a></li>
+           <li><a href="temples.html" title="Temples">Temples |</a></li>
+           <li><a href="reservations.html" title="Reservations">Reservations |</a></li>
+           <li><a href="services.html" title="Services">Services |</a></li>
+           <li><a href="contact.html" title="Contact">Contact </a></li>
+           
+       </ul>
+    </nav>
+<main>
+    <div id="summary">
+        <h2>We understand the unique needs of a Full-time Missionary!<br>
+        We offer several services to help you serve your best. </h2>
+            <img alt="in suite kitchenette" srcset="images/hotel-kitchen-large.jpg 1x,
+            images/hotel-kitchen-small.jpg 2x" src="images/hotel-kitchen-main.jpg">
+                <ul>
+                    <li>- Long-term stay accommodations with in kitchenette suites</li>
+                    <li>- A family search center that supports family search and ordinance work</li>
+                </ul>
+        <h3> If you have any concerns or questions dont hesitate to contact us!</h3>
+        <form method="GET" action="thanks.html">
+                <fieldset class="info">
+                    <legend>Contact Form </legend>
+                    <label>Full Name*:<input type="text" name="fname" required pattern="[A-Za-z]{5,}"></label><br>
+                    <label>Telephone Number:<input type="tel" name="phone" placeholder="1234567890" ></label><br>
+                    <label>Email*:<input type="email" name="email" required placeholder="someone@gmail.com"></label><br>
+                    <label>Zip Code*:<input type="number" name="Zip" required></label>
+                </fieldset>
+                <fieldset class="info">
+                    <legend>Additional Info/Comments/Questions</legend>
+                        <textarea rows="4" cols="30"></textarea>
+                 </fieldset>
+                
+                 <button type="submit" onclick="location.href = 'thanks.html';">Submit</button>
+            </form>
+           </div> 
+</main>
+<footer>
+        <span id="date"></span> | &#169;2019 Mason Rowley USA <a href="BYUI.edu/online">BYU-Idaho Online</a>
+        <script src="scripts/currentdate.js"></script>
+        <script src="scripts/hamburger.js"></script>
+</footer>
+</body>
+</html>
