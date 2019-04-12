@@ -10,6 +10,12 @@ header {
     
     text-align: center;
 }
+
+.motto{
+    background-image: url(logo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
 nav {	
     background: rgb(255,255,255);
     font-family: 'Montserrat', sans-serif;	
